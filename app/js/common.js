@@ -16,6 +16,16 @@ $(function() {
 			$(this).parents('.sub-menu').removeClass('open');
 		});
 
+		if( $('.timeline').length ){
+			$('.timeline').slick({
+				slidesToShow: 4,
+				slidesToScroll: 2,
+				swipeToSlide: true,
+				infinite: false,
+				dots: true,
+			});
+		}
+
 	});
 
 	if (screen.width <= 768){
