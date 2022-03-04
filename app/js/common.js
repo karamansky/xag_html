@@ -26,6 +26,26 @@ $(function() {
 			});
 		}
 
+		//клик по ссылке открывает попап. В href ссылки должен быть ID нужного попапа
+		$('.open-popup').on('click', function(e){
+			e.preventDefault();
+			var id = $(this).attr('href');
+			if(id != '' && id != '#'){
+				$(id).arcticmodal();
+			}else{
+				console.log('Укажите в ссылке идентифкатор попап окна');
+			}
+		});
+
+
+		if( $(".download .tab").length ){
+			$(".tab_item").not(":first").hide();
+			$(".download .tab").click(function() {
+				$(".download .tab").removeClass("active").eq($(this).index()).addClass("active");
+				$(".tab_item").hide().eq($(this).index()).fadeIn()
+			}).eq(0).addClass("active");
+		}
+
 	});
 
 	if (screen.width <= 768){

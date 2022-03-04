@@ -1070,11 +1070,12 @@ a {
     content: '';
     display: block;
     position: absolute;
+    height: 100%;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
-    background: url("../img/sense-worth-cover-top.png") center center no-repeat;
+    background: url("../img/sense-worth-cover-top.png") bottom center no-repeat;
     background-size: 100%; }
 
 .xag-core__item-content {
@@ -1300,6 +1301,176 @@ a {
 
 .timeline__text {
   margin-top: 8px; }
+
+.download-header-wrap .page-header__title {
+  color: #000; }
+
+.download {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto; }
+  .download .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .download .tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    width: 50%;
+    padding-bottom: 30px;
+    padding-top: 65px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    line-height: 26px;
+    text-align: center;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #ddd;
+    position: relative; }
+    .download .tab.active:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      bottom: -1px;
+      background: #DB0424;
+      position: absolute;
+      z-index: 2; }
+    .download .tab img {
+      width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px; }
+  .download .tab_item__title {
+    font-weight: 600;
+    color: #000;
+    line-height: 45px;
+    padding-top: 56px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 32px; }
+  .download .download__items {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 70px; }
+  .download .download__item {
+    height: 48px;
+    padding: 14px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #333; }
+    .download .download__item:hover {
+      background: #f0f0f0; }
+    .download .download__item > div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .download .download__item a {
+      color: #1a7aff; }
+  .download .download__filename {
+    width: 245px;
+    padding-right: 15px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer; }
+  .download .download__filedate {
+    width: 300px;
+    padding-right: 15px; }
+
+.faq {
+  margin-bottom: 70px;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto; }
+  .faq .faq__items {
+    overflow: hidden; }
+    .faq .faq__items input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1; }
+    .faq .faq__items input:checked + .faq__item-label {
+      background: #fff; }
+    .faq .faq__items input:checked::after {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    .faq .faq__items input:checked ~ .faq__item-content {
+      max-height: 100vh;
+      padding-bottom: 16px; }
+  .faq .faq__item {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    border: 1px solid #d5d5d5;
+    margin-bottom: 8px; }
+  .faq .faq__item-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 16px;
+    background: #fff;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: #5a5a5a; }
+    .faq .faq__item-label::after {
+      content: '';
+      width: 13px;
+      height: 7px;
+      background: url("img/icons/select-arrow-down.svg") center center no-repeat;
+      background-size: 100%;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      margin-top: 6px; }
+  .faq .faq__item-content {
+    max-height: 0;
+    padding: 0 16px;
+    color: #282828;
+    background: white;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px; }
+  .faq .faq__title {
+    font-weight: 600;
+    color: #000;
+    line-height: 45px;
+    padding-top: 56px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-size: 32px; }
 
 /***********************************************************************************************************************************/
 @media only screen and (max-width: 1220px) {
